@@ -1,0 +1,331 @@
+
+ /* =========================
+   Reset
+========================= *
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #111827;
+}
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #ffffff;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.btn{
+    background: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* =========================
+   Hero Section
+========================= */
+
+.hero{
+
+    text-align: center;
+    padding: 100px 20px;
+    background-image:url(./assets/banner.jpg);
+    color: white;
+}
+
+.hero h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   Speakers Section
+========================= */
+
+.speakers{
+    .speaker-card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+    padding: 80px 8%;
+    background: #ffffff;
+}
+
+.speakers h2{
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 50px;
+}
+
+/* 2 Card Upore + 2 Card Nice */
+
+.speaker-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.card{
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    transition: .3s;
+}
+
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.15);
+}
+
+.card img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.card-content h5{
+    color: #2563eb;
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.card-content h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.card-content p{
+    color: #666;
+    font-size: 16px;
+}
+
+/* =========================
+   Pricing Section
+========================= */
+
+.pricing{
+    padding:80px 8%;
+    background:#ffffff;
+}
+
+.pricing-title{
+    text-align:center;
+    font-size:52px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.pricing-subtitle{
+    text-align:center;
+    font-size:18px;
+    color:#6b7280;
+    margin-bottom:60px;
+}
+
+.price-container{
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+    gap:30px;
+}
+
+.price-card{
+    width:340px;
+    background:#ffffff;
+    border:1px solid #e5e7eb;
+    border-radius:16px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.price-card h5{
+    font-size:14px;
+    color:#6b7280;
+    text-transform:uppercase;
+    margin-bottom:15px;
+}
+
+.price-card h1{
+    font-size:55px;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.price-card p{
+    color:#6b7280;
+    margin-bottom:20px;
+}
+
+.price-card ul{
+    padding-left:20px;
+    margin-bottom:30px;
+}
+
+.price-card li{
+    margin-bottom:12px;
+    color:#374151;
+}
+
+/* Standard Button */
+
+.standard-btn{
+    width:100%;
+    padding:14px;
+    border:2px solid #2563eb;
+    background:white;
+    color:#2563eb;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* Team Button */
+
+.team-btn{
+    width:100%;
+    padding:14px;
+    border:2px solid #d1d5db;
+    background:white;
+    color:#111827;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* Pro Card */
+
+.pro{
+    background:#111827;
+    color:white;
+    transform:scale(1.05);
+}
+
+.pro h5,
+.pro p,
+.pro li{
+    color:#d1d5db;
+}
+
+.pro h1{
+    color:white;
+}
+
+.pro-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+/* =========================
+   AI Suggestion Box
+========================= */
+
+.ai-box{
+    width: 80%;
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 50px 30px;
+
+    text-align: center;
+
+    border: 3px dashed #8b5cf6;
+    border-radius: 20px;
+
+    background: #faf5ff;
+}
+
+.ai-box h2{
+    font-size: 42px;
+    font-weight: bold;
+    color: #7c3aed;
+    margin-bottom: 15px;
+}
+
+.ai-box p{
+    font-size: 18px;
+    color: #6b7280;
+}
+
+.footer {
+    background-color: #001220; 
+    color: #ffffff;
+    padding: 20px 40px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1431px; 
+    margin: 0 auto;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px; 
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
